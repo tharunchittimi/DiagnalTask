@@ -1,0 +1,84 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppThemeNoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/black</item>
+    </style>
+
+    <style name="SplashScreenTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowDisablePreview">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+
+    <declare-styleable name="CustomViews">
+        <attr name="setFonts" format="enum">
+            <enum name="TitilliumWeb-Black" value="0" />
+            <enum name="TitilliumWeb-Bold" value="1" />
+            <enum name="TitilliumWeb-BoldItalic" value="2" />
+            <enum name="TitilliumWeb-ExtraLight" value="3" />
+            <enum name="TitilliumWeb-ExtraLightItalic" value="4" />
+            <enum name="TitilliumWeb-Italic" value="5" />
+            <enum name="TitilliumWeb-Light" value="6" />
+            <enum name="TitilliumWeb-LightItalic" value="7" />
+            <enum name="TitilliumWeb-Regular" value="8" />
+            <enum name="TitilliumWeb-SemiBold" value="9" />
+            <enum name="TitilliumWeb-SemiBoldItalic" value="10" />
+        </attr>
+    </declare-styleable>
+
+    <string-array name="FontNames">
+        <item>TitilliumWeb-Black.ttf</item>
+        <item>TitilliumWeb-Bold.ttf</item>
+        <item>TitilliumWeb-BoldItalic.ttf</item>
+        <item>TitilliumWeb-ExtraLight.ttf</item>
+        <item>TitilliumWeb-ExtraLightItalic.ttf</item>
+        <item>TitilliumWeb-Italic.ttf</item>
+        <item>TitilliumWeb-Light.ttf</item>
+        <item>TitilliumWeb-LightItalic.ttf</item>
+        <item>TitilliumWeb-Regular.ttf</item>
+        <item>TitilliumWeb-SemiBold.ttf</item>
+        <item>TitilliumWeb-SemiBoldItalic.ttf</item>
+    </string-array>
+
+    <style name="extraLargeHeading" parent="android:Widget">
+        <item name="android:textSize">@dimen/sp20</item>
+        <item name="setFonts">TitilliumWeb-Regular</item>
+    </style>
+
+    <style name="heading" parent="android:Widget">
+        <item name="android:textSize">@dimen/sp16</item>
+        <item name="setFonts">TitilliumWeb-Regular</item>
+    </style>
+
+    <style name="headingLight" parent="android:Widget">
+        <item name="android:textSize">@dimen/sp16</item>
+        <item name="setFonts">TitilliumWeb-Light</item>
+    </style>
+
+    <style name="headingBold" parent="android:Widget">
+        <item name="android:textSize">@dimen/sp16</item>
+        <item name="setFonts">TitilliumWeb-Bold</item>
+    </style>
+
+    <style name="description" parent="android:Widget">
+        <item name="android:textSize">@dimen/sp14</item>
+        <item name="setFonts">TitilliumWeb-Regular</item>
+    </style>
+
+    <style name="descriptionBold" parent="android:Widget">
+        <item name="android:textSize">@dimen/sp14</item>
+        <item name="setFonts">TitilliumWeb-Bold</item>
+    </style>
+
+</resources>

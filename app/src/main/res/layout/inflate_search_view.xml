@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rootLayoutSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp60"
+        android:visibility="gone"
+        android:background="@color/black">
+
+        <EditText
+            android:id="@+id/editQuery"
+            style="@style/headingLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp10"
+            android:backgroundTint="@color/white"
+            android:hint="Search..."
+            android:inputType="textCapWords"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@drawable/cursor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivClear"
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:layout_marginEnd="@dimen/dp3"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/dp7"
+            android:src="@drawable/search_cancel"
+            app:layout_constraintBottom_toBottomOf="@id/editQuery"
+            app:layout_constraintEnd_toEndOf="@+id/editQuery"
+            app:layout_constraintTop_toTopOf="@id/editQuery" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
